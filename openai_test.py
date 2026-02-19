@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "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"
+openai.api_key = ""
 
 completion = openai.Completion.create(
     model="gpt-4",
