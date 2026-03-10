@@ -1,6 +1,6 @@
 from google import genai
 
-client = genai.Client(api_key="AIzaSyD8lEP-RALzM2-02gKsOJz8qDNgydZHqo0")
+client = genai.Client(api_key="")
 
 def main():
     print("Gemini AI 챗봇입니다. (종료: q, 히스토리: h)")
@@ -17,7 +17,7 @@ def main():
             for idx, entry in enumerate(history, 1):
                 print(f"{idx}. Q: {entry['question'][:50]}...")
                 print(f"   A: {entry['answer'][:50]}...")
-            print("--------------------\n")
+            print("--------------------\n")   
             continue
         
         if not user_input:
